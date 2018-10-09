@@ -1,3 +1,10 @@
 # dependencies
 /node_modules
-/eslintrc
+.vscode
+
+# linter
+.eslintrc.json
+
+# npm
+package-lock.json
+package.json
