@@ -1,10 +1,57 @@
 * {
     margin: 0;
-    padding: 0:
+    padding: 0;
 }
 
-#container {
-    margin: 0 auto;
-    padding: 5px;
+.container {
+    margin: 10px 50px;
+    /* padding: 5px; */
     border: 1px solid #000000;
+    border-radius: 2%;
+}
+
+.header {
+    padding: 20px;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    background-color: blueviolet;
+}
+
+.main {
+    height: 200px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    background-color: coral;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 'billInput billInput billDisplay billDisplay'
+    'tipSelection1 tipSelection2 tipSelection3 tipSelection4'
+    'submit submit submit submit';
+    grid-gap: 10px;
+}
+
+.billTotal {
+    margin-top: 10px;
+    margin-left: 10px;
+    grid-area: billInput;
+}
+
+.billDisplay {
+    grid-area: billDisplay;
+}
+
+#submit {
+    margin: 10px 60px 10px 60px;
+    padding: 5px;
+    grid-area: submit;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: #000000;
+    border-radius: 2%;
+}
+
+h1 {
+    text-align: center;
 }
