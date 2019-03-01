@@ -13,17 +13,23 @@
 <body>
     <section>
         <div class="container">
-            <div class="header">
-                <h1>Tip Calculator</h1>
+            <div class="header" id="output">
+                <h1 id="outputText">0.00</h1>
             </div>
             <hr>
+            <div class="section1" id="selections">
+                <label for="total">Total</label>
+                <label for="total">Tax %</label>
+                <label for="total">Tip %</label>
+                <label for="total">Split</label>
+            </div>
             <div class="main">
                 <div class="grid">
                     <div id="input">
+                        <label id="billAmount" for="Amount">Amount</label>
                         <input class="billTotal" type="text" name="total" value="Bill Total">
-                        <h2 class="billDisplay">1000</h2>
                     </div>
-                    <input id="submit" type="button" value="Submit">
+                    <input id="submit" type="button" value="Calculate">
                 </div>
             </div>
         </div>

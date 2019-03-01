@@ -4,24 +4,28 @@
 }
 
 .container {
-    margin: 10px 50px;
+    margin:100px 150px;
     /* padding: 5px; */
-    border: 1px solid #000000;
-    border-radius: 2%;
 }
 
 .header {
     padding: 20px;
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
-    background-color: blueviolet;
+    color: ghostwhite;
+    background-color: #4DB1FF;
+}
+
+.section1 {
+    display: flex;
+    flex: row noWrap;
+    justify-content: space-around;
+    padding: 20px;
+    color: #4DB1FF;
+    background-color: #26587F;
 }
 
 .main {
     height: 200px;
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
-    background-color: coral;
+    background-color: ghostwhite;
 }
 
 .grid {
@@ -35,23 +39,27 @@
 .billTotal {
     margin-top: 10px;
     margin-left: 10px;
-    grid-area: billInput;
+    padding: 10px;
 }
 
-.billDisplay {
-    grid-area: billDisplay;
+#input {
+    text-align: center;
+    margin: 10px 60px 10px 57px;
 }
 
 #submit {
     margin: 10px 60px 10px 60px;
     padding: 5px;
+    font-size: 15px;
     grid-area: submit;
     position: relative;
     box-sizing: border-box;
     box-shadow: #000000;
-    border-radius: 2%;
+    background-color: #4DB1FF;
 }
 
-h1 {
-    text-align: center;
+#outputText {
+    text-align: right;
+    line-height: 1.1em;
+    letter-spacing: 2.4px;
 }
