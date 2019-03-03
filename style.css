@@ -3,8 +3,16 @@
     padding: 0;
 }
 
+.wrapper {
+    max-width: 425px;
+    margin: 150px auto;
+}
+
 .container {
-    margin:100px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
     /* padding: 5px; */
 }
 
@@ -14,7 +22,7 @@
     background-color: #4DB1FF;
 }
 
-.section1 {
+.section {
     display: flex;
     flex: row noWrap;
     justify-content: space-around;
@@ -36,10 +44,31 @@
     grid-gap: 10px;
 }
 
-.billTotal {
+.input-amount {
     margin-top: 10px;
     margin-left: 10px;
     padding: 10px;
+}
+
+.btn {
+    /* margin: 10 0; */
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    box-sizing: border-box;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #99D3FF
+}
+
+.btn-selection:hover {
+  background-color: #4D697F;
 }
 
 #input {
@@ -47,15 +76,14 @@
     margin: 10px 60px 10px 57px;
 }
 
-#submit {
-    margin: 10px 60px 10px 60px;
-    padding: 5px;
+#btn-calc {
+    margin: 10px 50px 10px 50px;
+    padding: 15px 32px;
     font-size: 15px;
     grid-area: submit;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: #000000;
+    box-shadow: none;
     background-color: #4DB1FF;
+    color: ghostwhite;
 }
 
 #outputText {
