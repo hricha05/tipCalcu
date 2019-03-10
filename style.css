@@ -1,70 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-    max-width: 425px;
-    margin: 150px auto;
+  display: grid;
+  grid-template-areas: 'display' 'selectors' 'input' 'submit';
+  grid-gap: 5px;
+  max-width: 425px;
+  margin: 150px auto;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    /* padding: 5px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  /* padding: 5px; */
 }
 
 .header {
-    padding: 20px;
-    color: ghostwhite;
-    background-color: #4DB1FF;
+  padding: 20px;
+  color: ghostwhite;
+  background-color: #4DB1FF;
 }
 
 .section {
-    display: flex;
-    flex: row noWrap;
-    justify-content: space-around;
-    padding: 20px;
-    color: #4DB1FF;
-    background-color: #26587F;
+  display: flex;
+  flex: row noWrap;
+  justify-content: space-around;
+  padding: 20px;
+  color: #4DB1FF;
+  background-color: #26587F;
 }
 
 .main {
-    height: 200px;
-    background-color: ghostwhite;
+  height: 200px;
+  background-color: ghostwhite;
 }
 
 .grid {
-    display: grid;
-    grid-template-areas: 'billInput billInput billDisplay billDisplay'
+  display: grid;
+  grid-template-areas: 'billInput billInput billDisplay billDisplay'
     'tipSelection1 tipSelection2 tipSelection3 tipSelection4'
     'submit submit submit submit';
-    grid-gap: 10px;
+  grid-gap: 5px;
 }
 
 .input-amount {
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
 }
 
 .btn {
-    /* margin: 10 0; */
-    padding: 10px;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    border: none;
-    box-sizing: border-box;
-    background-color: inherit;
-    cursor: pointer;
+  /* margin: 10 0; */
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  box-sizing: border-box;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #99D3FF
+  background-color: #99D3FF;
 }
 
 .btn-selection:hover {
@@ -72,22 +75,22 @@
 }
 
 #input {
-    text-align: center;
-    margin: 10px 60px 10px 57px;
+  text-align: center;
+  margin: 10px 60px 10px 57px;
 }
 
 #btn-calc {
-    margin: 10px 50px 10px 50px;
-    padding: 15px 32px;
-    font-size: 15px;
-    grid-area: submit;
-    box-shadow: none;
-    background-color: #4DB1FF;
-    color: ghostwhite;
+  margin: 10px 50px 10px 50px;
+  padding: 15px 32px;
+  font-size: 15px;
+  grid-area: submit;
+  box-shadow: none;
+  background-color: #4DB1FF;
+  color: ghostwhite;
 }
 
 #outputText {
-    text-align: right;
-    line-height: 1.1em;
-    letter-spacing: 2.4px;
+  text-align: right;
+  line-height: 1.1em;
+  letter-spacing: 2.4px;
 }

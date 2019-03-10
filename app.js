@@ -22,4 +22,14 @@ function addTax() {
   console.log('tax');
 }
 
+function addTip() {
+  console.log('tip');
+}
+
+function splitBill() {
+  console.log('split bill');
+}
+
 tax.addEventListener('click', addTax);
+tip.addEventListener('click', addTip);
+split.addEventListener('click', splitBill);
