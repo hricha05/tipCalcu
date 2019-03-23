@@ -4,58 +4,63 @@
 }
 
 .wrapper {
-  display: grid;
-  grid-template-areas: 'display' 'selectors' 'input' 'submit';
-  grid-gap: 5px;
   max-width: 425px;
   margin: 150px auto;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas: 'display' 'selectors' 'input';
+  grid-gap: 5px;
   justify-content: center;
   margin: 0 auto;
-  /* padding: 5px; */
 }
 
 .header {
+  grid-area: display;
   padding: 20px;
   color: ghostwhite;
   background-color: #4DB1FF;
 }
 
 .section {
-  display: flex;
-  flex: row noWrap;
-  justify-content: space-around;
-  padding: 20px;
+  grid-area: selectors;
+  display: grid;
+  grid-template-columns: 140px 100px 100px;
+  grid-template-rows: 50px;
+  grid-template-areas: 'total' 'tip' 'split';
+  /* grid-auto-flow: row; */
+  place-items: center / center;
+  justify-content: stretch;
   color: #4DB1FF;
   background-color: #26587F;
 }
 
 .main {
+  display: grid;
+  grid-template-areas: 'billInput' 'submit';
+  grid-gap: 5px;
+  grid-area: input;
+  align-content: stretch;
+  justify-content: center;
   height: 200px;
   background-color: ghostwhite;
 }
 
-.grid {
-  display: grid;
-  grid-template-areas: 'billInput billInput billDisplay billDisplay'
-    'tipSelection1 tipSelection2 tipSelection3 tipSelection4'
-    'submit submit submit submit';
-  grid-gap: 5px;
+.header {
+  grid-area: display;
 }
 
 .input-amount {
   margin-top: 10px;
   margin-left: 10px;
   padding: 10px;
+  border: 1px solid lightgray;
 }
 
 .btn {
   /* margin: 10 0; */
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 15px;
   text-align: center;
   text-decoration: none;
@@ -74,19 +79,36 @@
   background-color: #4D697F;
 }
 
-#input {
-  text-align: center;
-  margin: 10px 60px 10px 57px;
+.btn-1 {
+  grid-area: total;
+  grid-column: 1;
+  grid-row: 1;
+}
+.btn-2 {
+  grid-area: tip;
+  grid-column: 2;
+  grid-row: 1;
+}  
+
+.btn-3 { 
+  grid-area: split;
+  grid-column: 3;
+  grid-row: 1;
 }
 
-#btn-calc {
+.btn-4 {
   margin: 10px 50px 10px 50px;
-  padding: 15px 32px;
   font-size: 15px;
   grid-area: submit;
   box-shadow: none;
   background-color: #4DB1FF;
   color: ghostwhite;
+}
+
+#input {
+  text-align: center;
+  align-self: center;
+  margin: 10px 60px 10px 57px;
 }
 
 #outputText {

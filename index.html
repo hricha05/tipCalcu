@@ -13,25 +13,21 @@
 <body>
   <section class='wrapper'>
       <div class="container">
-          <div class="header" id="output">
-              <h1 id="outputText">0.00</h1>
+          <div class="header">              
+              <p id='outputText' aria-placeholder="0.00">0.00</p>
           </div>
-          <hr>
           <div class="section" id="selectors">
-            <button class="btn btn-selection" id="total" type="button" name="button">Total</button>
-            <button class="btn btn-selection" id="tax" type="button" name="button">Tax %</button>
-            <button class="btn btn-selection" id="tip" type="button" name="button">Tip %</button>
-            <button class="btn btn-selection" id="split" type="button" name="button">Split</button>
+            <button class="btn btn-selection btn-1" id="total" type="button" name="button">Total</button>
+            <button class="btn btn-selection btn-2" id="btn-tip" type="button" name="button">Tip %</button>
+            <button class="btn btn-selection btn-3" id="btn-split" type="button" name="button">Split</button>
           </div>
-          <div class="main">
-            <div class="grid">
+            <div class="main">
               <div id="input">
-                <label for="amount">Amount</label>
-                <input id="amount" class="input-amount" type="text" name="amount">
+                <label for="amount">Amount:</label>
+                <input id="amount" class="input-amount" type="number" name="amount" placeholder="Enter your bill amount">
               </div>
-              <button id="btn-calc" class="btn btn-selection" type="button" name="calculate" onclick="btn">Calculate</button>
+              <button id="calculate" class="btn btn-selection btn-4" type="button" name="calculate" onclick="btn">Calculate</button>
             </div>
-          </div>
       </div>
   </section>
 
